@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar,NavLink } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import logo from "../img/logo.png";
@@ -13,11 +13,12 @@ const MyNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <NavLink to="">Home</NavLink>
-            <NavLink to="">Teacher</NavLink>
-            <NavLink to="">Courses</NavLink>
-            <NavLink to="">Contact</NavLink>
-            <NavLink to="">Paths</NavLink>
+            <NavLink className="nav-link" to="/teacher">Home</NavLink>
+            <NavLink className="nav-link" to="/teacher">Teacher</NavLink>
+            <NavLink className="nav-link" to="/courses">Courses</NavLink>
+            <NavLink className="nav-link" to="/contact">Contact</NavLink>
+            <NavLink className="nav-link" to="/paths">Paths</NavLink>
+            <Nav.Link href="https://github.com/clarusway"></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
