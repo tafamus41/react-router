@@ -40,7 +40,7 @@ const MyNavbar = () => {
             <NavLink className="nav-link" to="/paths">
               Paths
             </NavLink>
-            <Nav.Link href="https://github.com/clarusway">GitHub</Nav.Link>
+            <Nav.Link target="blank" href="https://github.com/clarusway">GitHub</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
