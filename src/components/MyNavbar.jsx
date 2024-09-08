@@ -18,7 +18,7 @@ const MyNavbar = () => {
             <NavLink className="nav-link" to="/courses">Courses</NavLink>
             <NavLink className="nav-link" to="/contact">Contact</NavLink>
             <NavLink className="nav-link" to="/paths">Paths</NavLink>
-            <NavLink href="https://github.com/clarusway"></NavLink>
+            <a href="https://github.com/clarusway">GitHub</a>
           </Nav>
         </Navbar.Collapse>
       </Container>
