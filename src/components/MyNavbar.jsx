@@ -14,7 +14,7 @@ const MyNavbar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <NavLink
-              style={(isActive) => ({
+              style={({isActive}) => ({
                 color: isActive && "red",
               })}
               className="nav-link"
@@ -22,17 +22,17 @@ const MyNavbar = () => {
             >
               Home
             </NavLink>
-            <NavLink style={(isActive) => ({
-                fonSize: isActive && "50px",
+            <NavLink style={({isActive}) => ({
+                fontSize: isActive && "25px",
               })} className="nav-link" to="/teacher">
               Teacher
             </NavLink>
-            <NavLink style={(isActive) => ({
+            <NavLink style={({isActive}) => ({
                 border: isActive && "1px solid blue",
               })} className="nav-link" to="/courses">
               Courses
             </NavLink>
-            <NavLink style={(isActive) => ({
+            <NavLink style={({isActive}) => ({
                 backgroundColor: isActive && "salmon",
               })} className="nav-link" to="/contact">
               Contact
