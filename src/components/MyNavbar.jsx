@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Nav, Navbar,NavLink } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Container, Nav, Navbar } from "react-bootstrap";
+import { Link, NavLink} from "react-router-dom";
 
 import logo from "../img/logo.png";
 const MyNavbar = () => {
@@ -18,7 +18,7 @@ const MyNavbar = () => {
             <NavLink className="nav-link" to="/courses">Courses</NavLink>
             <NavLink className="nav-link" to="/contact">Contact</NavLink>
             <NavLink className="nav-link" to="/paths">Paths</NavLink>
-            <a href="https://github.com/clarusway">GitHub</a>
+            <Nav.Link href="https://github.com/clarusway">GitHub</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
