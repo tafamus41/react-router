@@ -7,6 +7,7 @@ import Teacher from '../pages/Teacher';
 import CourseCard from '../pages/CourseCard';
 import ContactForm from '../pages/ContactForm';
 import Paths from '../pages/Paths';
+import NotFound from "../pages/NotFound"
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/courses" element={<CourseCard />} />
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/paths" element={<Paths />} />
+          <Route path="*" element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>
     </div>
