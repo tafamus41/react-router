@@ -1,5 +1,7 @@
+import { Outlet, useNavigate } from "react-router-dom";
 
 const Paths = () => {
+  const navigate = useNavigate();
   return (
     <div className="container mt-4">
       <h1>
@@ -13,25 +15,16 @@ const Paths = () => {
         experts!
       </p>
       <div>
-        <button className="btn btn-success w-25" >
+        <button className="btn btn-success w-25" onClick={() => navigate("FS")}>
           FS
         </button>
 
-        <button
-          className="btn btn-danger w-50"
-       
-        >
-          ana sayfa
-        </button>
-        <button
-          className="btn btn-warning w-25"
-  
-        >
+        <button className="btn btn-danger w-50">ana sayfa</button>
+        <button className="btn btn-warning w-25" onClick={() => navigate("AWS")}>
           Aws-Devops
         </button>
       </div>
-
-      
+      <Outlet/>
     </div>
   );
 };
