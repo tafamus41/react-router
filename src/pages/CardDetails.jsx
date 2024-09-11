@@ -1,9 +1,10 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import data from "../data"
 
 const CardDetails = () => {
   const {namE}=useParams()
+  const navigate=useNavigate()
   return (
     <div className="container text-center mt-4">
       {data.map(
@@ -15,8 +16,9 @@ const CardDetails = () => {
               <h3>{a.text} </h3>
               <h4>{a.yorum} </h4>
               <div>
-                <button className="btn btn-warning">GO BACK</button>
-                <button className="btn btn-primary">GO HOME</button>
+                <button className="btn btn-warning" onClick={()=>navigate(-1)} >GO BACK</button>
+                <button className="btn btn-primary" 
+                onClick={()=>navigate("/")} >GO HOME</button>
               </div>
             </div>
           )
